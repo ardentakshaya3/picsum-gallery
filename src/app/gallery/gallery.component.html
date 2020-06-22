@@ -1,0 +1,43 @@
+<div *ngIf="page == 1">
+    <div class="gallery" *ngFor="let image of images; let i = index">
+        <div *ngIf="i % 3 == 0" class="row">
+          <figure class="fig">
+            <a href="{{ image.download_url }}"><img class="gal" src="{{ image.download_url }}"></a>
+            <figcaption class="caption"><a href="{{ image.url }}">{{ image.author }}</a></figcaption>
+          </figure>
+          <figure class="fig" *ngIf="i + 1 < images.length">
+            <a href="{{ images[i+1].download_url }}"><img class="gal" src="{{ images[i + 1].download_url }}"></a>
+            <figcaption class="caption"><a href="{{ images[i+1].url }}">{{ images[i+1].author }}</a></figcaption>
+          </figure>
+          <figure class="fig" *ngIf="i + 2 < images.length">
+            <a href="{{ images[i+2].download_url }}"><img class="gal" src="{{ images[i + 2].download_url }}"></a>
+            <figcaption class="caption"><a href="{{ images[i+2].url }}">{{ images[i+2].author }}</a></figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="nxt1" (click)="nextPage()">Next</button>
+      <p class="pg1">Page {{ page }}</p>
+  </div>
+  
+  <div *ngIf="page > 1">
+      <div class="gallery" *ngFor="let image of images; let i = index">
+        <div *ngIf="i % 3 == 0" class="row">
+          <figure class="fig">
+            <a href="{{ image.download_url }}"><img class="gal" src="{{ image.download_url }}"></a>
+            <figcaption class="caption"><a href="{{ image.url }}">{{ image.author }}</a></figcaption>
+          </figure>
+          <figure class="fig" *ngIf="i + 1 < images.length">
+            <a href="{{ images[i+1].download_url }}"><img class="gal" src="{{ images[i + 1].download_url }}"></a>
+            <figcaption class="caption"><a href="{{ images[i+1].url }}">{{ images[i+1].author }}</a></figcaption>
+          </figure>
+          <figure class="fig" *ngIf="i + 2 < images.length">
+            <a href="{{ images[i+2].download_url }}"><img class="gal" src="{{ images[i + 2].download_url }}"></a>
+            <figcaption class="caption"><a href="{{ images[i+2].url }}">{{ images[i+2].author }}</a></figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="nxt" (click)="nextPage()">Next</button>
+      <button class="prv" (click)="previousPage()">Previous</button>
+      <p class="pg">Page {{ page }}</p>
+    </div>
+  

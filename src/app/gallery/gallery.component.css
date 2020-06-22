@@ -1,0 +1,81 @@
+.gal {
+    width: 350px;
+    height: 300px;
+    border: 1px solid white;
+}
+
+.gallery {
+    margin-left: 40px;
+}
+
+.message {
+    color: white;
+    padding-top: 50px;
+    margin-left: 340px;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.caption {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fig {
+    padding: 25px;
+}
+
+.nxt1 {
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgba(49, 48, 48, 0.884);
+    font-family: 'Times New Roman', Times, serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nxt {
+    margin-left: 43.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgba(49, 48, 48, 0.884);
+    font-family: 'Times New Roman', Times, serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.prv {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgba(49, 48, 48, 0.884);
+    font-family: 'Times New Roman', Times, serif;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.pg1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 46.5%;
+}
+
+.pg {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 49.5%;
+}

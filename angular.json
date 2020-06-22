@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "picsum-gallery": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "picsum-gallery"
+    }
+  },
+  "defaultProject": "picsum-gallery",
+  "cli": {
+    "analytics": "dd7f245e-2542-4486-af33-8972c80006db"
+  }
 }

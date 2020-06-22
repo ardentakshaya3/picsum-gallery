@@ -1,6 +1,13 @@
 # PicsumGallery
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+This project was generated with Angular CLI version 9.0.6.
+
+## Installing
+
+Install the npm packages described in the package.json and verify that it works:
+
+`npm install`
+`npm start`
 
 ## Development server
 
